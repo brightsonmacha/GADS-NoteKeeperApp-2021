@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.NoteKeeper.AppBarOverlay">
@@ -20,9 +21,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include
-        android:id="@+id/layout_content_main"
-        layout="@layout/content_main" />
+
 
     <Spinner
         android:id="@+id/spinnerCourses"
@@ -35,5 +34,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+         />
+
+
+    <EditText
+        android:id="@+id/textNoteText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Note text"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCourses"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCourses"
+        app:layout_constraintTop_toBottomOf="@+id/textNoteTitle" />
+
+
+
+    <EditText
+        android:id="@+id/textNoteTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Note title"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCourses"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCourses"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCourses" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

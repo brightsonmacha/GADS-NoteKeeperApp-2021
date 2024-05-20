@@ -7,7 +7,8 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.ArrayAdapter
 import com.example.notekeeper.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     private var notePosition = POSITION_NOT_SET
